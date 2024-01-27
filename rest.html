@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resturent</title>
+    <link rel="stylesheet" href="rest.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="rest.js" defer></script>
+</head>
+
+<body style="background-color: whitesmoke;">
+    <!-- =======================================================nav bar============================================================================ -->
+    <nav class="navbar navbar-expand-lg d-flex flex-row bg-white fixed-top">
+        <div class="container-fluid justify-content-lg-start">
+            <p class="pnav"><i class="fa-solid fa-utensils" style="font-size: 30px; color: green;"></i>Restro.</p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div>
+            <ul class="navbar-nav collapse navbar-collapse" id="navbarText">
+                <li class="nav-item">
+                    <button  class="item"><a class="nav-link active" aria-current="page" href="#carouselSection">Home</a></button>
+                </li>
+                <li class="nav-item">
+                    <button class="item"><a class="nav-link active" href="#dishesSection">Dishes</a></button>
+                </li>
+                <li class="nav-item">
+                    <button  class="item"><a class="nav-link active" href="#aboutSection">About</a></button>
+                </li>
+                <li class="nav-item">
+                    <button  class="item"><a class="nav-link active" href="#menuSection">Menu</a></button>
+                </li>
+                <li class="nav-item">
+                    <button  class="item"><a class="nav-link active" href="#reviewSection">Review</a></button>
+                </li>
+                <li class="nav-item">
+                    <button  class="item"><a class="nav-link active" href="#orderSection">Order</a></button>
+                </li>
+                <li class="nav-item px-2 mx-2">
+                    <button class="bot"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </li>
+                <li class="nav-item px-2 mx-2">
+                    <button class="bot"><i class="fa-solid fa-heart"></i></button>
+                </li>
+                <li class="nav-item px-2 mx-2">
+                    <button class="bot"><i class="fa-solid fa-cart-shopping"></i></button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ======================================================home========================================================= -->
+
+    <div class="container-fluid mb-3 p-0 mt-5 pt-3">
+        <div id="carouselSection" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="phome">
+                                        <p class="phome1">Our Special Dish</p>
+                                        <p class="phome2">Hot Pizza</p>
+                                        <p class="phome3">Lorem lpsum Dolor Sit Amet Consectetur Adipisicing</p>
+                                        <p class="phome3">Elit. Sit Natus Dolor Cumque?</p>
+                                        <button class="order">Order Now</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mx-0">
+                                    <img src="rest_images\home_1111.jpg" class="qimage1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="phome">
+                                        <p class="phome1">Our Special Dish</p>
+                                        <p class="phome2">Fried Chicken</p>
+                                        <p class="phome3">Lorem lpsum Dolor Sit Amet Consectetur Adipisicing</p>
+                                        <p class="phome3">Elit. Sit Natus Dolor Cumque?</p>
+                                        <button class="order">Order Now</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="rest_images\home_22222.jpg" class="qimage2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="phome">
+                                        <p class="phome1">Our Special Dish</p>
+                                        <p class="phome2">Cheesy Burger</p>
+                                        <p class="phome3">Lorem lpsum Dolor Sit Amet Consectetur Adipisicing</p>
+                                        <p class="phome3">Elit. Sit Natus Dolor Cumque?</p>
+                                        <button class="order">Order Now</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="rest_images\home_333.jpg" class="qimage3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-carousel-indicators">
+                <span data-bs-target="#carouselSection" data-bs-slide-to="0" class="bullet active"></span>
+                <span data-bs-target="#carouselSection" data-bs-slide-to="1" class="bullet"></span>
+                <span data-bs-target="#carouselSection" data-bs-slide-to="2" class="bullet"></span>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSection" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselSection" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- ==========================================Dishes====================================================== -->
+    <div class="dish" id="dishesSection">
+        <div class="container-fluid mb-3 p-0">
+            <div>
+                <h6 class="hcon">Our Dishes</h6>
+                <h3>POPULAR DISHES</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="botdiv" id="like">
+                                    <button class="botimgl"><i class="fa-solid fa-eye"></i></button>
+                                    <button class="botimgr"><i class="fa-solid fa-heart"></i></button>
+                                </div>
+                            </div>
+                            <img src="rest_images\dish_11.jpg" class="dishimg">
+                            <p class="pdish">Tasty Food</p>
+                            <p class="pstar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="pdollor">$15.99</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="dishorder">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="botdiv" id="like">
+                                    <button class="botimgl"><i class="fa-solid fa-eye"></i></button>
+                                    <button class="botimgr"><i class="fa-solid fa-heart"></i></button>
+                                </div>
+                            </div>
+                            <img src="rest_images\dish_2.jpg" class="dishimg">
+                            <p class="pdish">Tasty Food</p>
+                            <p class="pstar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="pdollor">$15.99</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="dishorder">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="botdiv" id="like">
+                                    <button class="botimgl"><i class="fa-solid fa-eye"></i></button>
+                                    <button class="botimgr"><i class="fa-solid fa-heart"></i></button>
+                                </div>
+                            </div>
+                            <img src="rest_images\dish_3.jpg" class="dishimg">
+                            <p class="pdish">Tasty Food</p>
+                            <p class="pstar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="pdollor">$15.99</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="dishorder">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="botdiv" id="like">
+                                    <button class="botimgl"><i class="fa-solid fa-eye"></i></button>
+                                    <button class="botimgr"><i class="fa-solid fa-heart"></i></button>
+                                </div>
+                            </div>
+                            <img src="rest_images\dish_44.jpg" class="dishimg">
+                            <p class="pdish">Tasty Food</p>
+                            <p class="pstar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="pdollor">$15.99</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="dishorder">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="botdiv" id="like">
+                                    <button class="botimgl"><i class="fa-solid fa-eye"></i></button>
+                                    <button class="botimgr"><i class="fa-solid fa-heart"></i></button>
+                                </div>
+                            </div>
+                            <img src="rest_images\dish_5.jpg" class="dishimg">
+                            <p class="pdish">Tasty Food</p>
+                            <p class="pstar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="pdollor">$15.99</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="dishorder">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="botdiv" id="like">
+                                    <button class="botimgl"><i class="fa-solid fa-eye"></i></button>
+                                    <button class="botimgr"><i class="fa-solid fa-heart"></i></button>
+                                </div>
+                            </div>
+                            <img src="rest_images\dish_6.jpg" class="dishimg">
+                            <p class="pdish">Tasty Food</p>
+                            <p class="pstar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="pdollor">$15.99</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="dishorder">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================about===================================================== -->
+    
+    <div class="about" id="aboutSection">
+        <div class="container-fluid mb-3 p-0">
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <h6 class="hcon">About Us</h6>
+                        <h3>WHY CHOOSE US?</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="rest_images\about_1.jpg" class="abtimg">
+                        </div>
+                        <div class="col-md-7">
+                            <h2 class="abth2">Best Food in The Country</h2>
+                            <p class="aboutp">Lorem lpsum Dolor Sit Amet Consectetur Adipisicing Elit. Dolore, Sequi Corrupti4
+                            Corporis Quaerat Voluptatem lpsam Neque Labore Modi Autem, Saepe
+                            Numquam Quod Reprehendent Rem? Tempora Aut Soluta Odio Corporis Nihil!
+                            <p class="aboutp">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing Elit, Apenam, Nemo. sit
+                                Porro illo Eos Cumque Delentiti iste Alias, Eum Natus.
+                            </p>
+                            <div class="row">
+                                <div class="col-md-3 mt-3 mx-1">
+                                    <p><button  class="abtbtn"><i class="fa-solid fa-truck-fast" style="font-size: 20px; color: green;"></i> Free Delivery</button></p>
+                                </div>
+                                <div class="col-md-3 mt-3 mx-1">
+                                    <p><button  class="abtbtn"><i class="fa-solid fa-dollar-sign" style="font-size: 20px; color: green;"></i> Easy Payments</button></p>
+                                </div>
+                                <div class="col-md-3 mt-3 mx-1">
+                                    <p><button class="abtbtn"><i class="fa-solid fa-headset" style="font-size: 20px; color: green;"></i>  24/7 Service</button></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 px-3">
+                                    <button class="learnbtn">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===========================================Menu=========================================================== -->
+
+    <div class="dish" id="menuSection">
+        <div class="container-fluid mb-3 p-0">
+            <div>
+                <h6 class="hcon">Our Menu</h6>
+                <h3>TODAY'S SPECIALITY</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="rest_images\menu_11.jpg" class="d-block w-100">
+                            <p class="pmenstar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+                            <p class="pmenfood">Delicious Food</p>
+                            <p class="pmen">Lorem lpsum Dolor Sit, Amet Consectetur</p>
+                            <p class="pmen">Adipisicing Elit, Excepturi. Accusantium</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button class="pmenbtn">Add to Cart</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="mendollor">$15.99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="rest_images\menu_222.jpg" class="d-block w-100">
+                            <p class="pmenstar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+                            <p class="pmenfood">Delicious Food</p>
+                            <p class="pmen">Lorem lpsum Dolor Sit, Amet Consectetur</p>
+                            <p class="pmen">Adipisicing Elit, Excepturi. Accusantium</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button class="pmenbtn">Add to Cart</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="mendollor">$15.99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="rest_images\menu_333.jpg" class="d-block w-100">
+                            <p class="pmenstar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+                            <p class="pmenfood">Delicious Food</p>
+                            <p class="pmen">Lorem lpsum Dolor Sit, Amet Consectetur</p>
+                            <p class="pmen">Adipisicing Elit, Excepturi. Accusantium</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button class="pmenbtn">Add to Cart</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="mendollor">$15.99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="rest_images\menu_44.jpg" class="d-block w-100">
+                            <p class="pmenstar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+                            <p class="pmenfood">Delicious Food</p>
+                            <p class="pmen">Lorem lpsum Dolor Sit, Amet Consectetur</p>
+                            <p class="pmen">Adipisicing Elit, Excepturi. Accusantium</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button class="pmenbtn">Add to Cart</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="mendollor">$15.99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="rest_images\menu_555.jpg" class="d-block w-100">
+                            <p class="pmenstar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+                            <p class="pmenfood">Delicious Food</p>
+                            <p class="pmen">Lorem lpsum Dolor Sit, Amet Consectetur</p>
+                            <p class="pmen">Adipisicing Elit, Excepturi. Accusantium</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button class="pmenbtn">Add to Cart</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="mendollor">$15.99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="rest_images\menu_66.jpg" class="d-block w-100">
+                            <p class="pmenstar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+                            <p class="pmenfood">Delicious Food</p>
+                            <p class="pmen">Lorem lpsum Dolor Sit, Amet Consectetur</p>
+                            <p class="pmen">Adipisicing Elit, Excepturi. Accusantium</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button class="pmenbtn">Add to Cart</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="mendollor">$15.99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="rest_images\menu_77.jpg" class="d-block w-100">
+                            <p class="pmenstar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+                            <p class="pmenfood">Delicious Food</p>
+                            <p class="pmen">Lorem lpsum Dolor Sit, Amet Consectetur</p>
+                            <p class="pmen">Adipisicing Elit, Excepturi. Accusantium</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button class="pmenbtn">Add to Cart</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="mendollor">$15.99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="rest_images\menu_88.jpg" class="d-block w-100">
+                            <p class="pmenstar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+                            <p class="pmenfood">Delicious Food</p>
+                            <p class="pmen">Lorem lpsum Dolor Sit, Amet Consectetur</p>
+                            <p class="pmen">Adipisicing Elit, Excepturi. Accusantium</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button class="pmenbtn">Add to Cart</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="mendollor">$15.99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="rest_images\menu_99.jpg" class="d-block w-100">
+                            <p class="pmenstar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+                            <p class="pmenfood">Delicious Food</p>
+                            <p class="pmen">Lorem lpsum Dolor Sit, Amet Consectetur</p>
+                            <p class="pmen">Adipisicing Elit, Excepturi. Accusantium</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button class="pmenbtn">Add to Cart</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="mendollor">$15.99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================Reviews=================================================== -->
+
+    <div class="review" id="reviewSection">
+        <div class="container-fluid mb-3 p-0">
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <h6 class="hcon">Customer's Review</h6>
+                        <h3>WHAT THEY SAY</h3>
+                    </div>
+                        <!-- <div class="row overflow-auto flex-nowrap"> -->
+                            <div class="row">
+                                <div class="col-md-3 p-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    <img src="rest_images\review_11.jpg" class="revimg">
+                                                </div>
+                                                <div class="col-md-10 m-0">
+                                                    <div class="rpdiv">
+                                                        <p class="prev">Jhon Deo</p>
+                                                        <p class="prevstar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="revcon">
+                                                Lorem lpsum Dolor Sit Amet Consectetur
+                                                Adipisicing Elit. Sit Fugiat Consectetur
+                                                Reprehendendus Aperiam Deserunt Nihil. Corporis
+                                                Fugit Voluptatibus Voluptate Totam Neque illo
+                                                Placeat Eius Laborum Aspernatur 
+                                                Quibusdam. Ipsum. Magni.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 p-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    <img src="rest_images\review_22.jpg" class="revimg">
+                                                </div>
+                                                <div class="col-md-10 m-0">
+                                                    <div class="rpdiv">
+                                                        <p class="prev">Jhon Deo</p>
+                                                        <p class="prevstar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="revcon">
+                                                Lorem lpsum Dolor Sit Amet Consectetur
+                                                Adipisicing Elit. Sit Fugiat Consectetur
+                                                Reprehendendus Aperiam Deserunt Nihil. Corporis
+                                                Fugit Voluptatibus Voluptate Totam Neque illo
+                                                Placeat Eius Laborum Aspernatur 
+                                                Quibusdam. Ipsum. Magni.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 p-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    <img src="rest_images\review_33.jpg" class="revimg">
+                                                </div>
+                                                <div class="col-md-10 m-0">
+                                                    <div class="rpdiv">
+                                                        <p class="prev">Jhon Deo</p>
+                                                        <p class="prevstar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="revcon">
+                                                Lorem lpsum Dolor Sit Amet Consectetur
+                                                Adipisicing Elit. Sit Fugiat Consectetur
+                                                Reprehendendus Aperiam Deserunt Nihil. Corporis
+                                                Fugit Voluptatibus Voluptate Totam Neque illo
+                                                Placeat Eius Laborum Aspernatur 
+                                                Quibusdam. Ipsum. Magni.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 p-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    <img src="rest_images\review_44.jpg" class="revimg">
+                                                </div>
+                                                <div class="col-md-10 m-0">
+                                                    <div class="rpdiv">
+                                                        <p class="prev">Jhon Deo</p>
+                                                        <p class="prevstar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="revcon">
+                                                Lorem lpsum Dolor Sit Amet Consectetur
+                                                Adipisicing Elit. Sit Fugiat Consectetur
+                                                Reprehendendus Aperiam Deserunt Nihil. Corporis
+                                                Fugit Voluptatibus Voluptate Totam Neque illo
+                                                Placeat Eius Laborum Aspernatur 
+                                                Quibusdam. Ipsum. Magni.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================Order============================================================ -->
+
+    <div class="ordernow" id="orderSection">
+        <div class="container-fluid mb-3 p-0">
+            <div>
+                <h6 class="hcon">Order Now</h6>
+                <h3>FREE AND FAST</h3>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Your Name</label><br>
+                                    <p><input type="text" id="name" name="name" placeholder="enter your name" required></button></p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="order">Your Order</label><br>
+                                    <p><input type="text" id="order" name="order" placeholder="enter food name" required></button></p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="quantity">Quantity</label><br>
+                                    <p><input type="text" id="quantity" name="quantity" placeholder="how many orders" required></button></p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">Your Address</label><br>
+                                    <p><input type="text" id="address" name="address" placeholder="enter your address" required></button></p>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <form>
+                                <div class="form-group">
+                                    <label for="number">Your Number</label><br>
+                                    <p><input type="text" id="number" name="number" placeholder="enter your number" required></button></p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="food">Additional Food</label><br>
+                                    <p><input type="text" id="food" name="food" placeholder="extra with food" required></button></p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="datepicker">Date and Time</label><br>
+                                    <p><input type="date" id="datepicker" name="datepicker" placeholder="dd-mm-yyyy" required></button></p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Your Message</label><br>
+                                    <p><input type="text" id="message" name="message" placeholder="enter your message" required></button></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div style="text-align: start; "> 
+                        <button class="orderbtn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================contact==================================================== -->
+    
+    <div class="card mt-2">
+        <div class="card-body">
+            <div class="row px-5">
+                <div class="col-md-3 px-4 pt-5">
+                    <h4>Locations</h4>
+                    <p class="contactp">India</p>
+                    <p class="contactp">Japan</p>
+                    <p class="contactp">Russia</p>
+                    <p class="contactp">USA</p>
+                    <p class="contactp">France</p>
+                </div>
+                <div class="col-md-3 px-4 pt-5">
+                    <h4>Quick Links</h4>
+                    <p class="contactp">Home</p>
+                    <p class="contactp">Dishes</p>
+                    <p class="contactp">About</p>
+                    <p class="contactp">Menu</p>
+                    <p class="contactp">Review</p>
+                    <p class="contactp">Order</p>
+                </div>
+                <div class="col-md-3 px-4 pt-5">
+                    <h4>Contact Info</h4>
+                    <p class="contactp"><i class="fa-solid fa-phone"></i>+123-456-7890</p>
+                    <p class="contactp"><i class="fa-solid fa-phone"></i>+111-222-3333</p>
+                    <p class="contactp"><i class="fa-solid fa-envelope"></i>anu@gmail.com</p>
+                    <p class="contactp"><i class="fa-solid fa-envelope"></i>anureddy@gmail.com</p>
+                    <p class="contactp"><i class="fa-solid fa-location-dot"></i>Hyderabad,India</p>
+                </div>
+                <div class="col-md-3 px-4 pt-5">
+                    <h4>Follow Us</h4>
+                    <p class="contactp"><i class="fa-brands fa-facebook"></i>Facebook</p>
+                    <p class="contactp"><i class="fa-brands fa-twitter"></i>Twitter</p>
+                    <p class="contactp"><i class="fa-brands fa-instagram"></i>Instagram</p>
+                    <p class="contactp"><i class="fa-brands fa-linkedin"></i>Linkedin</p>
+                </div>
+            </div>
+            <div>
+                <p class="copy">
+                    <span style="color: rgb(1, 1, 47);">Copyright @2023 By</span>,
+                    <span style="color: green;">Mr. Web Designer</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================Carousel link=============================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
