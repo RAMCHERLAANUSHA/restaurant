@@ -4,7 +4,7 @@
 Developed a Restaurant website.
 
 ## Technologies  
-HTML, CSS, Bootstrap.
+HTML, CSS, Bootstrap, Javascript.
 ## Features 
 - It has deshes, Menu, review, about restaurant, order form and contact.
 - run : rest.html  run : main.html file  [Link to run](https://github.com/RAMCHERLAANUSHA/restaurant/blob/master/rest.html)
